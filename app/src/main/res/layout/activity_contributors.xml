@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contributors">
+
+    <TextView
+        android:id="@+id/contributors"
+        android:layout_width="374dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/baloo"
+        android:text="Our Team"
+        android:textAlignment="center"
+        android:textColor="#1E88E5"
+        android:textSize="40dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_below="@+id/contributors"
+        android:id="@+id/image1"
+        android:layout_width="260dp"
+        android:layout_height="215dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="70dp"
+        app:lottie_url="https://assets10.lottiefiles.com/packages/lf20_RjpU74.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:id="@+id/r1">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/baloo"
+            android:text="Quang Vinh (coder)"
+            android:textAlignment="center"
+            android:textColor="#3A3737"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:layout_below="@id/r1"
+        android:id="@+id/r2">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/baloo"
+            android:text="Minh Thao (leader)"
+            android:textAlignment="center"
+            android:textColor="#3A3737"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:layout_below="@id/r2"
+        android:id="@+id/r3">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/baloo"
+            android:text="Huy Le"
+            android:textAlignment="center"
+            android:textColor="#3A3737"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:layout_below="@id/r3"
+        android:id="@+id/r4">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/baloo"
+            android:text="Bao Khanh"
+            android:textAlignment="center"
+            android:textColor="#3A3737"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/animationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_url="https://assets10.lottiefiles.com/packages/lf20_dfbnBf.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+
+</RelativeLayout>

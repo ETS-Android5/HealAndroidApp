@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Alarm_man"
+    android:background="#fff">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_below="@+id/l1"
+        android:id="@+id/image1"
+        android:layout_width="254dp"
+        android:layout_height="199dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        app:lottie_url="https://assets6.lottiefiles.com/packages/lf20_sgwmgT.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter Your Task"
+        android:textAlignment="center"
+        android:fontFamily="@font/baloo"
+        android:textColorHint="#A5A8A3"
+        android:background="@drawable/rounded_corners"
+        android:textColor="#000" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="300dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners"
+        android:headerBackground="#00ACC1"
+        android:numbersBackgroundColor="@color/cardview_shadow_end_color"
+        android:numbersTextColor="#000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/setBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Set Alarm"
+            android:textColor="#fff"
+            android:fontFamily="@font/baloo"
+            android:background="@drawable/rounded_button"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel Alarm"
+            android:fontFamily="@font/baloo"
+            android:textColor="#fff"
+            android:background="@drawable/rounded_button"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

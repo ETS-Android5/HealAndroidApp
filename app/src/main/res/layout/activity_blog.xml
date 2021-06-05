@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Blog">
+    <TextView
+        android:id="@+id/blog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:fontFamily="@font/baloo"
+        android:text="Heal Blog"
+        android:textAlignment="center"
+        android:textColor="#00ACC1"
+        android:textSize="35sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/photo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="70dp"
+        android:foregroundGravity="center"
+        android:padding="10dp"
+        app:lottie_url="https://assets7.lottiefiles.com/private_files/lf30_zzItmF.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/baloo"
+        android:text="Mental Stress has became the deadly disease than any other.In this pandameic
+the situation has worsen which has lead to many problems to each individual which directly affected
+mental stress.\n
+Therefore, Heal were established. Heal provides you one of best solution to this disease. Heal  helps young generations who are having psychological problems and treat them at a basic level..\n
+"
+        android:textColor="#595454"
+        android:layout_below="@+id/photo"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>

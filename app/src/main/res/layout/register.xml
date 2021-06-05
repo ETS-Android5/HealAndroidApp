@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35sp"
+            android:fontFamily="@font/autour_one"
+            android:text="Heal"
+            android:textSize="40dp"
+            android:textColor="#14BED3"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Come To Life, Come To Heal"
+            android:textAlignment="center"
+            android:textColor="#00efc8"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:fontFamily="@font/baloo"
+            android:layout_below="@+id/appname"
+            android:layout_marginTop="-15dp"/>
+
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/appname"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:text="Registration"
+            android:textColor="#0C6664"
+            android:fontFamily="@font/baloo"
+            android:textSize="28dp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imagelogin"
+            android:layout_width="150dp"
+            android:layout_height="142dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtname"
+            app:lottie_url="https://assets10.lottiefiles.com/packages/lf20_5e7wgehs.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:padding="2dp"
+            />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textColor="#000"
+            android:textColorHint="#A5A8A3"
+            android:layout_below="@+id/imagelogin"
+            android:padding="10dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:layout_centerHorizontal="true"
+            android:textSize="22dp"
+            android:layout_marginLeft="20sp"
+            android:background="@drawable/rounded_corners"
+            android:id="@+id/edttxtname"/>
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="E-mail Id"
+            android:layout_below="@+id/edttxtname"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:textSize="22dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_corners"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="20sp"
+            android:textColor="#000"
+            android:textColorHint="#A5A8A3"
+
+            android:id="@+id/edttxtemail"/>
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No."
+            android:padding="10dp"
+            android:layout_below="@+id/edttxtemail"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:inputType="number"
+            android:textSize="22dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:layout_marginLeft="20sp"
+            android:textColor="#000"
+            android:textColorHint="#A5A8A3"
+
+            android:id="@+id/edttxtmobile"/>
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/edttxtmobile"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_corners"
+            android:textSize="22dp"
+            android:fontFamily="@font/amiko_semibold"
+            android:padding="10dp"
+            android:layout_marginLeft="20sp"
+            android:textColor="#000"
+            android:textColorHint="#A5A8A3"
+            android:id="@+id/edttxtpassword"/>
+
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:fontFamily="@font/baloo"
+            android:textAllCaps="true"
+            android:layout_below="@+id/edttxtpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="@drawable/rounded_button"
+            android:id="@+id/btnregister1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnregister1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="22dp"
+            android:fontFamily="@font/baloo"
+            android:textColor="#0C6664"
+            android:text="Already Register? Login"
+            android:id="@+id/alreadyregister"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
